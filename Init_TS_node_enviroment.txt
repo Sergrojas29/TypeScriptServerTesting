@@ -1,0 +1,19 @@
+npx tsc --init
+// if yarn isn't installed npm install --global yarn   /// check yarn --version
+
+yarn  init
+mkdir src
+touch src/app.ts
+
+yarn add ts-node-dev typescript -D
+
+yarn init
+
+"scripts": {
+    "start": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+}
+
+yarn add express
+
+yarn add @types/node @types/express -D
